@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body style="background-image: url('static/images/bg.jpg'); background-attachment: fixed;
+background-size: cover;  background-repeat: no-repeat;">
+
+<h1 style="color:white; text-align:center;">Contamination source</h1>
+<h2 style="color:white; text-align:center;">The dropdown gives you a list of places/patient id's. Select one of them to view the distribution of people infected because of the place or the patient in India</h1>
+    <h3>
+        <form action="{{ url_for('plot1') }}" method="POST" target="_blank">
+            <label style="color:white; text-align:center;">Select an option:</label>
+            <select id="source" name="source" width="300px">
+                {% for o in options %}
+                    <option value="{{ o }}" SELECTED>{{ o }}</option>
+                {% endfor %}
+            </select>
+        
+        
+            <input type="submit">
+            
+        </form>
+    <h3>
+    <h3 style="color:white; text-align:center;"> <a href="{{ url_for('hotspot') }}" style="color:white; text-align:center;">Click here to check the hotspots</a></h3>
+
+ 
+</body>
+</html>

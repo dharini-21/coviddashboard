@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body style="background-image: url('static/images/bg.jpg'); background-attachment: fixed;
+background-size: cover;  background-repeat: no-repeat;">
+<h1 style="text-align:center;color:white;font-size: 50px">Select the type of user to continue</h1>
+<!--<h4 style="text-align:left;color:wheat;font-size: 40px">Normal User Admin</h4>-->
+<!--<h4 style="text-align:right;color:wheat;font-size: 20px">Admin</h4>-->
+<a href="{{ url_for('get_started') }}">
+         <img src="static/images/admin_new.jpg"
+         style="width:400px;height:400px; float: left;"></a>
+
+<a href="{{ url_for('handle_admin') }}">
+         <img src="static/images/nonadmin.jpg"
+         style="width:400px;height:400px;float: right;"></a>
+
+</body>
+</html>

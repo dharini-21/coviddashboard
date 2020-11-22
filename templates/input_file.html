@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body style="background-image: url('static/images/bg.jpg'); background-attachment: fixed;
+background-size: cover;  background-repeat: no-repeat;">
+<h1 style="text-align:center;color:white"> Update Database </h1>
+<form action="{{ url_for('update_data') }}" method="post" target="_blank" enctype="multipart/form-data">
+  <label for="myfile" style="text-align:left;color:white;font-size: 35px">Select a file to update the database:</label><br><br>
+  <input type="file" id="myfile" name="myfile" size="100"/><br><br>
+  <input type="submit" value="Submit" style="height:40px; width:100px">
+</form>
+</body>
+</html>
