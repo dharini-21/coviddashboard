@@ -16,6 +16,7 @@ feedparser==6.0.1
 Flask==1.1.2
 Flask-Uploads==0.2.1
 gast==0.2.2
+geotext==0.4.0
 glob3==0.0.1
 google-auth==1.11.2
 google-auth-oauthlib==0.4.1
@@ -54,6 +55,7 @@ Pillow==7.0.0
 protobuf==3.11.3
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
+pycountry==20.7.3
 pylint==2.4.4
 pyparsing==2.4.6
 python-dateutil==2.8.1
